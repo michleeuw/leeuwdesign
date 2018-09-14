@@ -1,0 +1,403 @@
+@font-face {
+  font-family: LetterGothicStdBold;
+  src: url("../fonts/lettergothicstdbold.eot");
+  /* For IE */
+  src: local("lettergothicstdbold"), url("../fonts/lettergothicstdbold.ttf") format("truetype");
+  /* For non-IE */
+}
+/* line 22, ../sass/basic.scss */
+body {
+  font-family: LetterGothicStdBold, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: 14px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcyN2JjNiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjYzNhMTdlIi8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNmNTkxMzMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #727bc6), color-stop(30%, #c3a17e), color-stop(60%, #f59133));
+  background-image: -moz-linear-gradient(top, #727bc6, #c3a17e 30%, #f59133 60%);
+  background-image: -webkit-linear-gradient(top, #727bc6, #c3a17e 30%, #f59133 60%);
+  background-image: linear-gradient(to bottom, #727bc6, #c3a17e 30%, #f59133 60%);
+}
+
+/* line 28, ../sass/basic.scss */
+a {
+  color: #FFF;
+  padding: 5px;
+}
+
+/* line 32, ../sass/basic.scss */
+.section, #about, #web, #music, #contact {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  background-color: #000;
+  -moz-box-shadow: black 2px 2px 10px;
+  -webkit-box-shadow: black 2px 2px 10px;
+  box-shadow: black 2px 2px 10px;
+}
+
+/* line 39, ../sass/basic.scss */
+.section-heading {
+  margin-left: 10px;
+  margin-top: 40px;
+  color: #FF6600;
+}
+
+/* line 44, ../sass/basic.scss */
+.section-footer {
+  width: 100%;
+  height: 50px;
+}
+
+/* line 48, ../sass/basic.scss */
+.section-content {
+  float: left;
+  width: 100%;
+}
+
+/* line 52, ../sass/basic.scss */
+.content-item, .web-item, .music-item, .contact-item {
+  border: 1px solid grey;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+/* line 58, ../sass/basic.scss */
+.content-item a, .web-item a, .music-item a, .contact-item a {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 61, ../sass/basic.scss */
+.content-item a:hover, .web-item a:hover, .music-item a:hover, .contact-item a:hover {
+  color: #FF6600;
+}
+
+/* line 66, ../sass/basic.scss */
+p.clear {
+  clear: both;
+}
+
+/* line 70, ../sass/basic.scss */
+.come-in {
+  transform: translate(0px, 150px);
+  animation: come-in;
+  animation-timing-function: ease;
+  animation-duration: 1.6s;
+  animation-fill-mode: forwards;
+  -webkit-transform: translate(0px, 150px);
+  -webkit-animation: come-in;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-duration: 1.6s;
+  -webkit-animation-fill-mode: forwards;
+}
+/* line 12, ../sass/mixins/_comeInAnimation.scss */
+.come-in:nth-child(odd) {
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+}
+
+/* line 73, ../sass/basic.scss */
+.already-visible {
+  transform: translate(0px, 0px);
+  animation: none;
+  -webkit-transform: translate(0px, 0px);
+  -webkit-animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes come-in {
+  to {
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+/* line 82, ../sass/basic.scss */
+#nav {
+  position: fixed;
+  width: 200px;
+  z-index: 100;
+  background-color: #000000;
+  display: none;
+  font-size: 16px;
+  border: 1px solid white;
+}
+/* line 90, ../sass/basic.scss */
+#nav ul {
+  margin-top: 30px;
+}
+/* line 93, ../sass/basic.scss */
+#nav li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+/* line 96, ../sass/basic.scss */
+#nav li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 99, ../sass/basic.scss */
+#nav li a.active {
+  color: #00FF00;
+}
+/* line 102, ../sass/basic.scss */
+#nav li a:hover {
+  color: #FF6600;
+}
+
+/* line 109, ../sass/basic.scss */
+.lang-flag, #dutch-flag, #english-flag {
+  float: left;
+  width: 30px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* line 117, ../sass/basic.scss */
+#dutch-flag {
+  background-image: url("../img/dutch-flag.png");
+}
+
+/* line 121, ../sass/basic.scss */
+#english-flag {
+  background-image: url("../img/english-flag.png");
+}
+
+/* line 125, ../sass/basic.scss */
+#menu-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/menu-button.png");
+  background-repeat: no-repeat;
+  top: 10px;
+  right: 0px;
+}
+
+/* line 134, ../sass/basic.scss */
+#menu-close-button {
+  color: #FFFFFF;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+/* line 140, ../sass/basic.scss */
+#menu-close-button:hover {
+  color: #FF6600;
+}
+
+/* line 145, ../sass/basic.scss */
+#home {
+  width: 100%;
+  height: 450px;
+}
+
+/* line 149, ../sass/basic.scss */
+#home-heading {
+  display: none;
+}
+
+/* line 152, ../sass/basic.scss */
+#theCanvas {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcyN2JjNiIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjYzNhMTdlIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmNTkxMzMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #727bc6), color-stop(20%, #c3a17e), color-stop(30%, #f59133));
+  background-image: -moz-linear-gradient(top, #727bc6, #c3a17e 20%, #f59133 30%);
+  background-image: -webkit-linear-gradient(top, #727bc6, #c3a17e 20%, #f59133 30%);
+  background-image: linear-gradient(to bottom, #727bc6, #c3a17e 20%, #f59133 30%);
+}
+
+/* line 155, ../sass/basic.scss */
+#loading-box {
+  position: absolute;
+  text-align: center;
+  width: 20%;
+  height: 20px;
+  top: 235px;
+  left: 40%;
+  right: 40%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 166, ../sass/basic.scss */
+#scroll-down-arrow {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  background-image: url("../img/scroll-down-arrow.png");
+  background-repeat: no-repeat;
+  top: 400px;
+  left: 50%;
+  margin-left: -25px;
+  cursor: pointer;
+}
+/* line 177, ../sass/basic.scss */
+#scroll-down-arrow:hover {
+  background-image: url("../img/scroll-down-arrow-over.png");
+}
+
+/* line 182, ../sass/basic.scss */
+#about {
+  margin-top: 0px;
+}
+/* line 185, ../sass/basic.scss */
+#about #intro-text {
+  width: 80%;
+  max-width: 800px;
+  border: 1px solid black;
+  margin-top: 40px;
+  overflow-y: hidden;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+/* line 199, ../sass/basic.scss */
+.web-item {
+  width: 290px;
+  height: 340px;
+}
+/* line 203, ../sass/basic.scss */
+.web-item p {
+  margin-top: 175px;
+  padding: 8px;
+  width: 280px;
+  height: 130px;
+  color: #FFF;
+}
+
+/* line 215, ../sass/basic.scss */
+.music-item {
+  width: 290px;
+}
+/* line 219, ../sass/basic.scss */
+.music-item a.active {
+  color: #00FF00;
+}
+/* line 223, ../sass/basic.scss */
+.music-item .song-descr {
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* line 228, ../sass/basic.scss */
+#music-tab-buttons {
+  margin-left: 10px;
+}
+
+/* line 231, ../sass/basic.scss */
+.music-tab-button, #commisioned-tab-button, #free-tab-button {
+  width: 145px;
+  height: 15px;
+  float: left;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color: #666666;
+  color: #FFF;
+  padding: 5px;
+}
+/* line 240, ../sass/basic.scss */
+.music-tab-button:hover, #commisioned-tab-button:hover, #free-tab-button:hover {
+  color: #FF6600;
+}
+/* line 243, ../sass/basic.scss */
+.music-tab-button.active, .active#commisioned-tab-button, .active#free-tab-button {
+  color: #00FF00;
+  background-color: #999999;
+}
+
+/* line 254, ../sass/basic.scss */
+#audio-player {
+  margin-left: 10px;
+}
+
+/* line 261, ../sass/basic.scss */
+.contact-item {
+  width: 300px;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 272, ../sass/basic.scss */
+  .section-content {
+    width: 90%;
+  }
+
+  /* line 275, ../sass/basic.scss */
+  .section-content, #audio-player, #music-tab-buttons {
+    margin-left: 10%;
+  }
+
+  /* line 278, ../sass/basic.scss */
+  .section-heading {
+    margin-left: 11%;
+  }
+
+  /* line 282, ../sass/basic.scss */
+  #nav {
+    display: block !important;
+    width: 100%;
+    height: 40px;
+    left: 0px !important;
+    font-size: 16px;
+    background-color: #000000;
+    border: none;
+  }
+  /* line 290, ../sass/basic.scss */
+  #nav ul {
+    margin-top: 10px;
+  }
+  /* line 293, ../sass/basic.scss */
+  #nav li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 80px;
+  }
+
+  /* line 299, ../sass/basic.scss */
+  #english-flag {
+    float: right;
+    margin-right: 10px;
+  }
+
+  /* line 303, ../sass/basic.scss */
+  #dutch-flag {
+    float: right;
+    margin-right: 10px;
+  }
+
+  /* line 307, ../sass/basic.scss */
+  #menu-button, #menu-close-button {
+    display: none !important;
+  }
+
+  /* line 311, ../sass/basic.scss */
+  #home {
+    padding-top: 38px;
+  }
+
+  /* line 314, ../sass/basic.scss */
+  #home-heading {
+    top: 0px;
+  }
+
+  /* line 319, ../sass/basic.scss */
+  #about #intro-text {
+    margin-left: 10%;
+  }
+  /* line 322, ../sass/basic.scss */
+  #about .section-heading {
+    margin-left: 10%;
+  }
+
+  /* line 327, ../sass/basic.scss */
+  .web-item:hover {
+    background-color: #2C3539;
+  }
+}

@@ -1,0 +1,16 @@
+@mixin come-in-animation() {
+  transform: translate(0px,150px);
+  animation: come-in;
+  animation-timing-function: ease;
+  animation-duration: 1.6s;
+  animation-fill-mode: forwards;
+  -webkit-transform: translate(0px,150px);
+  -webkit-animation: come-in;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-duration: 1.6s;
+  -webkit-animation-fill-mode: forwards;
+  &:nth-child(odd) {
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+  }
+}

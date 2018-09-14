@@ -1,0 +1,131 @@
+[
+	{
+		"name": "home",
+		"title": ["Home", "Home"],
+		"description": ["Leeuwdesign", "Leeuwdesign"]
+	}, {
+		"name": "about",
+		"title": ["Over", "About"],
+		"description": ["<p>Na het behalen van mijn kandidaats examen besloot ik de muziek in te gaan. Als professioneel saxofonist/gitarist werkte ik met bands als Gruppo Sportivo, Herman Brood, De Dijk, The Scene, Raggende Manne en vele minder bekende groepen. Van 94 tot 98 was ik zanger/saxofonist in mijn eigen band Rudolph Dancer.</p><p>Toen ik Adobe Flash ontdekte werd ik meteen enthousiast en ging educatieve spelletjes maken voor kinderen. Op den duur kon ik aan de slag als ontwikkelaar en verdiepte me later ook in HTML, JavaScript en CSS. Ik heb een grote verscheidenheid aan websites en applicaties gemaakt. Door mijn <a href='http://www.leeuwdesign.nl/flash/' target='_blank'>Flash</a> achtergrond heb ik veel belangstelling voor HTML5 canvas.</p><p>En de muziek? Dat doe ik nog steeds. Digitaal, zoals in mijn project<a href='http://www.leipzigg.com' target='_blank'>Leipzigg</a>, of lekker ouderwets analoog als zanger/bassist van de bluesrock band<a href='http://www.blackhammervoodoo.com' target='_blank'>Black hammer Voodoo</a></p><p>Als je meer wilt weten over mijn bezigheden kan je<a href ='http://www.leeuwdesign.nl/docs/CV_MichielvanLeeuwen.pdf' target='_blank'>hier</a>mijn CV downloaden.</p>", "<p>After completing my Bachelor Psychology I decided to become a musician. As a professional saxophonist/guitarist I worked with bands like Gruppo Sportivo, Herman Brood, De Dijk, The Scene, Raggende Manne and various less known bands. From 94 till 98 I was the singer/saxophonist of Rudolph Dancer.</p><p>When I discovered Adobe Flash I immediately got very excited and developed educational games for children. Later on I found work as a professional developer and learned HTML, JavaScript and CSS. I made or was involved in a diverse collection of websites and applications. As a former <a href='http://www.leeuwdesign.nl/flash/' target='_blank'>Flash</a> developer I have a special interest in HTML5 Canvas.</p><p>And the music? I’m still doing that. Digital, like in my project<a href='http://www.leipzigg.com' target='_blank'>Leipzigg</a>, or analogue as singer/bassist of <a href='http://www.blackhammervoodoo.com' target='_blank'>Black Hammer Voodoo</a></p><p>If you wanna know more about my activities you can download my résumé<a href = 'http://www.leeuwdesign.nl/docs/CV_MichielvanLeeuwen.pdf' target='_blank'>here</a>.</p>"]
+	}, {
+		"name": "web",
+		"title": ["Web", "Web"],
+		"projects": [
+			{
+				"title": "Black Hammer Voodoo",
+				"image": "bhv.png",
+				"url": "http://www.blackhammervoodoo.com",
+				"description": ["Voor de bluesrock band Black Hammer Voodoo maakte ik deze (responsive) website. Ik deed Design en techniek.", "For the bluesrock band Black Hammer Voodoo I created this (responsive) website. I did design and engineering."]
+			},  {
+				"title": "Dennis Stroucken",
+				"image": "dennis.jpg",
+				"url": "http://denstrou.websites.xs4all.nl",
+				"description": ["Voor dementerende ouderen ontwikkelde Dennis een 'samen lachen en samen zingen' programma. Samen met Erik Kruize bouwde ik een site voor hem.", "For demented elderly Dennis developed a 'laugh together, sing together' programme. With Erik Kruize I built a website for him."]
+			}, {
+				"title": "Run 4 da granny",
+				"image": "runfordagranny.jpg",
+				"url": "http://www.leeuwdesign.nl/runfordagranny",
+				"description": ["Een game, gemaakt met CreateJs. Een dief besteelt een oud vrouwtje en krijgt haar achter hem aan.", "A game made with CreateJs. A thief robs an old lady. Then she goes after him."]
+			}, {
+				"title": "HTML5 Video player",
+				"image": "html5_video.png",
+				"url": "http://www.leeuwdesign.nl/videoplayer",
+				"description": ["Een html5 videoplayer op Canvas met video's uit mijn muzikale loopbaan", "HTML5 videoplayer on Canvas with videos of my musical career."]
+			}, {
+				"title": "HTML5 Video player MC",
+				"image": "html5_video_mc.png",
+				"url": "http://www.leeuwdesign.nl/video_mc",
+				"description": ["Een html5 videoplayer waarin de video wordt onderbroken en weer verder speelt na het beantwoorden van een multiple choice vraag.", "HTML5 videoplayer where the video is paused and resumes after the aswering of a multiple choice question."]
+			}
+		]
+	}, {
+		"name": "music",
+		"title": ["Muziek", "Music"],
+		"projects": [
+			{
+				"title": ["Werk in opdracht", "Commissioned Work"],
+				"songs": [
+					{
+						"title": "Tranceport",
+						"file": "tranceport",
+						"description": ["Uit de voorlichtingsfilm 'Transportbesparing' in opdracht van het Ministerie van V&W door Morphosis/BeamSystems.", "For the educational movie 'Saving on Transport' commissioned by the Ministry of Transport. Made by 'Morphosis'."]
+					}, {
+						"title": "Indyend",
+						"file": "indyend",
+						"description": ["Eveneens Uit de voorlichtingsfilm 'Transportbesparing'.", "Also from the movie 'saving on Transport'."]
+					}, {
+						"title": "Far From Jesus",
+						"file": "farfromjesus",
+						"description": ["Uit de speelfilm 'Terrorama' van Edwin Brienen, gemaakt i.s.m Theo Sieben.", "From the movie 'Terrorama' by Edwin Brienen. In collaboration with Theo Sieben."]
+					}, {
+						"title": "SpyTheme",
+						"file": "spytheme",
+						"description": ["Voor het spel SpyGame, in opdracht van Graphix Visions.", "For the game SpyGame, commisionned by Graphix Visions."]
+					}, {
+						"title": "Christmas Town",
+						"file": "xmastown",
+						"description": ["Voor het Kega kersthuis, in opdracht van Kega.", "For the 'Kega Christmas House', commisioned by Kega."]
+					}
+				]
+			}, {
+				"title": ["Vrij Werk", "Free Work"],
+				"songs": [
+					{
+						"title": "Church",
+						"file": "church"
+					}, {
+						"title": "Run 4 Da Granny",
+						"file": "runfordagranny"
+					}, {
+						"title": "Let There Be Light",
+						"file": "lettherebelight"
+					},{
+						"title": "Crash",
+						"file": "crash"
+					},{
+						"title": "Telephone",
+						"file": "telephone"
+					}, {
+						"title": "Ahoh",
+						"file": "ahoh"
+					}, {
+						"title": "Cry Wolf",
+						"file": "crywoolf"
+					}, {
+						"title": "Dark Shine",
+						"file": "darkshine"
+					}, {
+						"title": "Dessert Fox",
+						"file": "dessertfox"
+					}, {
+						"title": "Forrest",
+						"file": "forrest"
+					}, {
+						"title": "Orange Glow",
+						"file": "orangeglow"
+					}, {
+						"title": "Port",
+						"file": "port"
+					}, {
+						"title": "Space Traffic",
+						"file": "spacetraffic"
+					}, {
+						"title": "Summer Lake",
+						"file": "summerlake"
+					}, {
+						"title": "Take Off",
+						"file": "takeoff"
+					}, {
+						"title": "Tent",
+						"file": "tent"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "contact",
+		"title": ["Contact", "Contact"],
+		"tel": "Tel: <a href='tel:+31613302459'>+31(0)6 13302459</a>",
+		"email": "Email: <a href='mailto:michiel@leeuwdesign.nl'>michiel@leeuwdesign.nl</a>"
+	}
+]

@@ -1,0 +1,6 @@
+@mixin already-visible() {
+   transform: translate(0px,0px);
+   animation: none;
+   -webkit-transform: translate(0px,0px);
+   -webkit-animation: none;
+}
